@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Band</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+SC&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/fea99ff89f.js" crossorigin="anonymous"></script>
+
+
+</head>
+<body>
+
+
+<div class="navbar">
+  <a href="">Home</a>
+  <a href="">BAND</a>
+  <a href="">TOUR</a>
+  <a href="">CONTACT</a>
+
+  <div class="dropdown">
+    <button class="dropbtn">MORE 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="#">Merchandise</a>
+      <a href="#">Extras</a>
+      <a href="#">Media</a>
+    </div>
+  </div> 
+  <a href="" class="right"></a>
+  <i class="fas fa-search"></i>
+</div>
+
+<main>
+  <div class="slideDiv">
+
+    <div class="img1">
+      <img class="mySlides" src="img/la.jpg" style="width:100%">
+      <div class="firstP">
+        <h2 class="city">Los Angeles</h2>
+        <p class="text">We had the best time playing at Venice Beach!</p>
+      </div>
+    </div>
+
+    <div class="img2">
+      <img class="mySlides" src="img/ny.jpg" style="width:100%">
+      <div class="secondP">
+        <h2 class="city">New York</h2>
+        <p class="text">The atmosphere in New York is lorem ipsum</p>
+      </div>
+    </div>
+
+    <div class="img3">
+      <img class="mySlides" src="img/chicago.jpg" style="width:100%">
+      <div class="thirdP">
+        <h2 class="city">Chicago</h2>
+        <p class="text">Thank you,Chicago-A night we won't forget</p>
+      </div>
+    </div>
+
+  </div>
+
+  <section>
+
+    <h3>THE BAND</h3>
+
+    <h4>We love music</h4>
+
+    <p>We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+  </section>
+
+  <section class="members">
+
+    <div class="member1">
+      <p>Name</p>
+      <img src="img/bandmember.jpg" alt="">
+    </div>
+
+    <div class="member2">
+      <p>Name</p>
+      <img src="img/bandmember.jpg" alt="">
+    </div>
+ 
+    <div class="member3">
+      <p>Name</p>
+      <img src="img/bandmember.jpg" alt="">
+    </div>
+
+
+  </section>
+
+  <section class="tourDates">
+    <h3>Tour Dates</h3>
+    <h4>Remember to book your tickets!</h4>
+    <br>
+    <ul class="tickets">
+      <li>September <span>Sold Out</span> </li>
+      <hr>
+      <li>October <span>Sold Out</span> </li>
+      <hr>
+      <li>November <span class="number3">3</span> </li>
+    </ul>
+
+    <div class="cityImage">
+
+
+      <img class="image1" src="img/newyork.jpg" alt="newyork">
+      <div class="information">
+        <h5 class="ticket1">New York</h5>
+        <p class="date">Fri 27 Nov 2016</p>
+        <p>Praesent tincidunt sed tellus ut <br> rutrum sed vitae justo.</p>
+         
+        <!-- <div class="openForm"> -->
+
+          <button class="open" type="submit" name="buyTicket" onclick="document.getElementById('ticketModal').style.display='block'">Buy Tickets</button>
+
+          <div id="ticketModal" class="w3-modal">
+
+            <span onclick="document.getElementById('ticketModal').style.display='none'" 
+            class="w3-button w3-teal w3-xlarge w3-display-topright">&times;</span>
+            
+            <div class="container">
+              <p><label><i class="fa fa-shopping-cart"></i> Tickets, $15 per person</label></p>
+              <input class="input1" type="text" placeholder="How many?">
+              <p><label><i class="fa fa-user"></i> Send To</label></p>
+              <input class="input2" type="text" placeholder="Enter email">
+              <button class="button1">PAY <i class="fa fa-check"></i></button>
+              <button class="button2" onclick="document.getElementById('ticketModal').style.display='none'">Close <i class="fa fa-remove"></i></button>
+              <p>Need help?</p>
+            </div>
+          </div>
+
+        <!-- </div> -->
+ 
+
+             </div>
+          
+
+             <img class="image2" src="img/paris.jpg" alt="paris">
+             <div class="information2">
+               <h5 class="ticket2">Paris</h5>
+               <p class="date2">Sat 28 Nov 2016</p>
+               <p>Praesent tincidunt sed tellus ut <br> rutrum sed vitae justo.</p>
+       
+                <button class="submit" type="submit" onclick="openForm()">Buy Tickets</button>
+       
+       
+             </div>
+
+
+             <img class="image3" src="img/sanfran.jpg" alt="sanfran">
+             <div class="information3">
+               <h5 class="ticket3">San Francisco</h5>
+               <p class="date3">Sun 29 Nov 2016</p>
+               <p>Praesent tincidunt sed tellus ut <br> rutrum sed vitae justo.</p>
+       
+                <button class="submit" type="submit" onclick="openForm()">Buy Tickets</button>
+       
+       
+          
+             </div>
+
+        </div>
+    
+  </section>
+
+  <section class="contact">
+    <h3>Contact</h3>
+    <h4>Fan? Drop a note !</h4>
+
+    <div class="contactUs">
+      <i class="fas fa-map-marker-alt"> Chicago, US</i><br><br>
+      <i class="fas fa-phone"> Phone: +00 151515</i><br><br>
+      <i class="fas fa-envelope"> Email: mail@mail.com</i><br><br>
+    </div>
+
+    <div class="userMessage">
+
+      <form action="" class="contactForm">
+        <fieldset>
+         <input type="text" name="userName" id="userName" placeholder="Name">
+         <input type="email" name="userEmail" id="userEmail" placeholder="Email"><br>
+         <input type="text" name="message" id="message" placeholder="Message"><br>
+         <input type="submit" value="SEND">
+
+
+       
+        </fieldset>
+      </form>
+
+    </div>
+
+  </section>
+
+  <section class="map">
+
+    <img  src="img/map.jpg" alt="">
+   </section>
+
+ 
+</main>
+
+<footer>
+   
+  <section class="socialMedia">
+    <div class="icons">
+      <i class="fab fa-facebook-square"></i>
+      <i class="fab fa-instagram"></i>
+      <i class="fab fa-snapchat"></i>
+      <i class="fab fa-pinterest-p"></i>
+      <i class="fab fa-twitter"></i>
+      <i class="fab fa-linkedin-in"></i>
+
+    </div>
+
+
+    <h4 class="w3School">Powered by <a style="color: gray;" href="https://www.w3schools.com/w3css/default.asp">w3.css</a></h4>
+  </section>
+
+</footer>
+
+<script src="js/app.js">
+
+
+let modal = document.getElementById('ticketModal');
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+</body>
+</html>
